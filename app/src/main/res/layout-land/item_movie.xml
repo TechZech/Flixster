@@ -2,8 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#03A9F4">
 
     <ImageView
         android:id="@+id/ivPoster"
@@ -18,7 +20,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
+        android:textStyle="italic"
         tools:text="Title" />
 
     <TextView
@@ -29,5 +34,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#FFFFFF"
         tools:text="Overview" />
 </RelativeLayout>
