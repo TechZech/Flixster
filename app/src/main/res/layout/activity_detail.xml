@@ -34,10 +34,27 @@
         android:rating="8.5" />
 
     <TextView
+        android:id="@+id/releaseDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Release Date"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/langTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="Language"
+        android:textColor="#FFFFFF" />
+
+    <TextView
         android:id="@+id/tvOverview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-light"
-        android:text="TextView"
+        android:text="Overview Goes Here"
         android:textColor="#FFFFFF" />
+
 </LinearLayout>
