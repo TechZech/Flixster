@@ -80,6 +80,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                 imageUrl = movie.getBackdropPath();
             }
             else{
+                // portrait
                 imageUrl = movie.getPosterPath();
             }
 
@@ -98,5 +99,4 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
             });
         }
     }
-
 }

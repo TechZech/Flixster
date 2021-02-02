@@ -52,8 +52,8 @@ public class DetailActivity extends YouTubeBaseActivity {
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
         ratingbar.setRating((float) movie.getRating());
-        releaseDate.setText(String.format("Release Date: %s", movie.getRelease()));
-        langTitle.setText(String.format("Language: %s", movie.getLanguage()));
+        releaseDate.setText(String.format("Release Date: %s", movie.getRelease())); // hard code title before it
+        langTitle.setText(String.format("Language: %s", movie.getLanguage()));  // ditto as above
 
         AsyncHttpClient client = new AsyncHttpClient();
         client.get(String.format(VIDEOS_URL, movie.getMovieId()), new JsonHttpResponseHandler() {
@@ -78,7 +78,6 @@ public class DetailActivity extends YouTubeBaseActivity {
 
             }
         });
-
     }
 
     private void initializeYoutube(final String youtubeKey) {

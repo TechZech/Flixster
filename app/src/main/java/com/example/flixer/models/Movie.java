@@ -44,16 +44,12 @@ public class Movie {
         }
 
         return movies;
-
     }
 
-    public String getPosterPath() {
-        return String.format("https://image.tmdb.org/t/p/w342/%s", posterPath);
-    }
+    // Getters Below
+    public String getPosterPath() { return String.format("https://image.tmdb.org/t/p/w342/%s", posterPath); }
 
-    public String getBackdropPath(){
-        return String.format("https://image.tmdb.org/t/p/w342/%s", backdropPath);
-    }
+    public String getBackdropPath(){ return String.format("https://image.tmdb.org/t/p/w342/%s", backdropPath); }
 
     public String getTitle() {
         return title;
